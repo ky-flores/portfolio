@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="../projects/index.html">Projects</a>
-        <a href="../contact/index.html">Contact</a>
-        <a href="index.html">Resume</a>
-        <a href="https://github.com/ky-flores" target="_blank">GitHub</a>
-    </nav>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../projects/index.html">Projects</a>
+    <a href="../contact/index.html">Contact</a>
+    <a href="index.html" class="current">Resume</a>
+    <a href="https://github.com/ky-flores" target="_blank">GitHub</a>
+  </nav>
 
+  <header class="resume-header">
     <h1>Kyle Flores</h1>
-  <p>
-    (619) 385-6184 | 
-    <a href="mailto:ky.flores.27@gmail.com">ky.flores.27@gmail.com</a> |
-    <a href="https://linkedin.com/in/ky-flores" target="_blank">linkedin.com/in/ky-flores</a> |
-    <a href="https://github.com/kyle-flores" target="_blank">github.com/kyle-flores</a>
-  </p>
+    <p class="contact-info">
+      <i class="fas fa-phone"></i> (619) 385-6184 |
+      <a href="mailto:ky.flores.27@gmail.com" class="email"><i class="fas fa-envelope"></i> ky.flores.27@gmail.com</a> |
+      <a href="https://linkedin.com/in/ky-flores" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+      <a href="https://github.com/kyle-flores" target="_blank" class="github"><i class="fab fa-github"></i> GitHub</a>
+    </p>
+  </header>
 
   <section>
     <h2>Education</h2>
     <article>
-      <h3>University of California San Diego</h3>
+      <div class="entry-header">
+        <h3>University of California San Diego</h3>
+        <div class="location-date">La Jolla, CA | <em>June 2027</em></div>
+      </div>
       <p>Bachelor of Science in Data Science <strong>(GPA: 3.89)</strong></p>
-      <p>La Jolla, CA<br>
-      <time datetime="2027-06">June 2027</time></p>
       <p><strong>Relevant Coursework:</strong> Linear Algebra, Statistical Analysis, Data Structures and Algorithms, Application of Data Science, Theoretical Foundations of Data Science, Machine Learning Algorithms, Intro to Probability</p>
     </article>
   </section>
@@ -45,8 +50,10 @@
     <h2>Experience</h2>
 
     <article>
-      <h3>Data Science Researcher – UC San Diego Smarr Lab</h3>
-      <p>La Jolla, CA | <time datetime="2023-09">Sep. 2023</time> – Present</p>
+      <div class="entry-header">
+        <h3>Data Science Researcher – UC San Diego Smarr Lab</h3>
+        <span class="location-date">La Jolla, CA | <em>Sep. 2023 – Present</em></span>
+      </div>
       <ul>
         <li>Developed a scalable data preprocessing pipeline for over 7M raw data entries across 8 tables.</li>
         <li>Conducted advanced correlational and inferential analyses with Scikit-learn and Seaborn visualizations.</li>
@@ -56,8 +63,10 @@
     </article>
 
     <article>
-      <h3>Data Science Research Assistant – San Diego Supercomputer Center</h3>
-      <p>La Jolla, CA | <time datetime="2024-02">Feb. 2024</time> – <time datetime="2024-06">Jun. 2024</time></p>
+      <div class="entry-header">
+        <h3>Data Science Research Assistant – San Diego Supercomputer Center</h3>
+        <span class="location-date">La Jolla, CA | <em>Feb. 2024 – Jun. 2024</em></span>
+      </div>
       <ul>
         <li>Performed SQL querying and wrangled data for visualization using Matplotlib.</li>
         <li>Ran advanced statistical tests and multivariate analysis (PCA, KDE) on dialysis patient data.</li>
@@ -65,8 +74,10 @@
     </article>
 
     <article>
-      <h3>Machine Learning Engineer – Data Science Student Society (DS3)</h3>
-      <p>La Jolla, CA | <time datetime="2024-01">Jan. 2024</time> – <time datetime="2024-05">May 2024</time></p>
+      <div class="entry-header">
+        <h3>Machine Learning Engineer – Data Science Student Society (DS3)</h3>
+        <span class="location-date">La Jolla, CA | <em>Jan. 2024 – May 2024</em></span>
+      </div>
       <ul>
         <li>Led web scraping using Beautiful Soup, transforming 40K+ entries into structured data.</li>
         <li>Optimized feature sets to improve model performance by 10–20%.</li>
@@ -79,8 +90,11 @@
     <h2>Projects</h2>
 
     <article>
-      <h3>Sustainable Waste Image Recognition</h3>
-      <p><strong>Tools:</strong> Python, Tensorflow, OpenCV, Matplotlib | <time datetime="2024-10">Oct. 2024</time></p>
+      <div class="entry-header">
+        <h3>Sustainable Waste Image Recognition</h3>
+        <span class="location-date"><em>Oct. 2024</em></span>
+      </div>
+      <p><strong>Tools:</strong> Python, Tensorflow, OpenCV, Matplotlib</p>
       <ul>
         <li>Engineered a CNN with image preprocessing to classify recyclable vs biodegradable waste.</li>
         <li>Used Conv2D, MaxPooling2D, and sigmoid layers for binary classification.</li>
@@ -88,8 +102,11 @@
     </article>
 
     <article>
-      <h3>Airline Passenger Satisfaction Classifier</h3>
-      <p><strong>Tools:</strong> Python, Pandas, Plotly, Scikit-learn | <time datetime="2024-01">Jan. 2024</time></p>
+      <div class="entry-header">
+        <h3>Airline Passenger Satisfaction Classifier</h3>
+        <span class="location-date"><em>Jan. 2024</em></span>
+      </div>
+      <p><strong>Tools:</strong> Python, Pandas, Plotly, Scikit-learn</p>
       <ul>
         <li>Trained KNN, Random Forest, and Gradient Boosting classifiers to reach 96% performance metrics.</li>
         <li>Performed feature engineering with one-hot encoding and standardization.</li>
@@ -97,14 +114,16 @@
     </article>
 
     <article>
-      <h3>Store Sales Predictor</h3>
-      <p><strong>Tools:</strong> Python, Pandas, Seaborn, Scikit-learn | <time datetime="2024-01">Jan. 2024</time></p>
+      <div class="entry-header">
+        <h3>Store Sales Predictor</h3>
+        <span class="location-date"><em>Jan. 2024</em></span>
+      </div>
+      <p><strong>Tools:</strong> Python, Pandas, Seaborn, Scikit-learn</p>
       <ul>
         <li>Compared Linear Regression, KNN, Ridge, and Lasso for sales prediction across 8000+ records.</li>
         <li>Enhanced model accuracy through iterative preprocessing improvements.</li>
       </ul>
     </article>
-
   </section>
 
 </body>
