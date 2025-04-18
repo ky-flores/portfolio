@@ -16,7 +16,11 @@ nav li {
 nav {
   display: flex;
   margin-bottom: 1em;
-  border-bottom: 1px solid oklch(80% 3% 200);
+  /* border-bottom: 1px solid oklch(80% 3% 200); */
+
+  --border-color: oklch(65% 10% 200 / 60%);
+  --current-border-color: oklch(60% 30% 200 / 70%);
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
@@ -25,28 +29,38 @@ nav a {
   color: inherit;
   text-align: center;
   padding: 0.5em;
+  /* border-bottom: 0.4em solid transparent; */
 }
 
 nav a.current {
   border-bottom: 0.4em solid oklch(80% 3% 200);
-  padding-bottom: 0.1em;
+  /* padding-bottom: 0.1em; */
 }
 
 :root {
   --color-accent: oklch(60% 50% 200);
+  color-scheme: light dark;
 }
 
 html {
   accent-color: var(--color-accent);
+
+  background-color: var(--background-light);
+  color: canvastext;
+}
+
+html[data-theme="dark"] {
+  background-color: oklch(10% 0.05 250);
 }
 
 nav a:hover {
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: oklch(50% 70% 200 / 20%);
   border-bottom: 0.4em solid var(--color-accent);
 }
 
 input,
 textarea,
+select,
 button {
   font: inherit;  
 }
@@ -119,11 +133,21 @@ ul li {
   color: #0077B5;
 }
 
-.github {
+/* .github {
   color: #000000;
-}
+} */
 
 section ul li {
   margin-bottom: 5px;  
   line-height: 1.1;    
+}
+
+label.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+  display: inline-flex;
+  gap: 0.3rem;
 }
