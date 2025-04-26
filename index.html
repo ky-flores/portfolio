@@ -7,19 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <nav>
-        <a href="index.html" >Home</a>
-        <a href="projects/index.html">Projects</a>
-        <a href="contact/index.html">Contact</a>
-        <a href="resume/index.html">Resume</a>
-        <a href="https://github.com/kyle-flores" target="_blank">GitHub</a>
-    </nav> -->
 
     <h1>Kyle Flores</h1>
     <p>Hi, my name is Kyle and I am a 2nd year Data Science student at UCSD.</p>
     <img src="images/Lebron.jpg" alt="Illustrious LeBron" width="200">
+    
+      <h2 class="section-title">Latest Projects</h2>
+      <div class="projects">
+        <!-- Dynamically added content will appear here -->
+      </div>
 
-    <script type="module" src="global.js"></script>
+      <div id="profile-stats">
+
+        <h2>GitHub Stats</h2>
+        
+        <dl>
+          <dt>Public Repos:</dt><dd>...</dd>
+          <dt>Public Gists:</dt><dd>...</dd>
+          <dt>Followers:</dt><dd>...</dd>
+          <dt>Following:</dt><dd>...</dd>
+        </dl>
+      </div>
+
+    <script type="module" src="global.js" defer></script>
+    <script type="module" src="index.js" defer></script>
+      
     
 </body>
 </html>

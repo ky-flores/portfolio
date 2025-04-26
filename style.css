@@ -85,16 +85,38 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   gap: 1em;
+  flex-wrap: wrap;
 }
 
 .projects article {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 3;
+  flex-wrap: wrap;
+}
+
+.projects img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Space between image and description */
 }
 
 .projects h2 {
   margin: 0; 
+}
+
+.project-description {
+  padding-top: 140px; /* Ensure space between the image and description */
+  padding-bottom: 10px;
+}
+
+.project-description {
+  padding-top: 140px; /* Ensure space between the image and description */
+  padding-bottom: 10px;
+}
+
+.section-title {
+  font-size: 2rem;
 }
 
 h1 {
@@ -150,4 +172,41 @@ label.color-scheme {
   font-family: inherit;
   display: inline-flex;
   gap: 0.3rem;
+}
+
+#profile-stats {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#profile-stats h2 {
+  margin-bottom: 1rem;
+}
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+#profile-stats dt {
+  font-weight: bold;
+  grid-row: 1;
+}
+
+#profile-stats dd {
+  margin: 0;
+  grid-row: 2;
+}
+
+.projects img {
+  max-width: 100%;
+  max-height: 150px; /* or whatever limit you want */
+  object-fit: contain; /* keeps image aspect ratio */
+  display: block;
+  margin: 0 auto;
 }

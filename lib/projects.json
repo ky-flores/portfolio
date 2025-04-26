@@ -1,0 +1,75 @@
+[
+    {
+        "title": "Sustainable Waste Image Recognition",
+        "image": "https://i.ytimg.com/vi/uW2xE_EdNXQ/maxresdefault.jpg",
+        "description": "Utilized Tensorflow and OpenCV to engineer an accurate image preprocessing pipeline for a Convolutional Neural Network (CNN) to classify waste images as recyclable or biodegradable, Employed Conv2D layers with ReLU activation to extract spatial features, MaxPooling2D dimensionality reduction, and implemented a dense layer of sigmoid activation to output binary predictions",
+        "year": 2024
+    },
+    {
+        "title": "Dynamic Movie Search Engine",
+        "image": "https://is4-ssl.mzstatic.com/image/thumb/Purple126/v4/c8/c3/69/c8c36941-d5bd-aa7a-b044-bbcb5ec8f058/source/512x512bb.jpg",
+        "description": "Created a robust search engine that accepts user input to efficiently search for and retrieve information about movies, studios, and ratings; Supports multi-keyword searches, delivering both intersection and individual results for an enhanced and more comprehensive user experience; Implements several distinct data structures to optimize search functionality and improve performance",
+        "year": 2024
+    },
+    {
+        "title": "Septic Patient Analysis",
+        "image": "https://cdn-prod.medicalnewstoday.com/content/images/articles/325/325488/doctor-performs-physical-examination-on-patient-with-stethoscope.jpg",
+        "description": "Proficiently implemented data wrangling and data standardization on a database containing 10,000+ dataframes with over 250 rows each, handling discrepancies, missing values, then generated several data visualizations to display multifaceted insights relating to differences in physiological characteristics between septic and nonseptic patients; Conducted numerous statistical analysis tests, PCA analysis, and KDE comparisons to uncover significant findings about correlations between physiological feature patterns/trends and sepsis diagnosis",
+        "year": 2023
+    },
+    {
+        "title": "Fugit cumque molestiae iusto!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Porro voluptas quaerat mollitia, sapiente hic dignissimos ad! Reiciendis accusamus architecto asperiores quam tenetur maxime, nulla culpa rem similique modi iste corporis necessitatibus dolorem neque itaque animi tempora doloremque sapiente!",
+        "year": 2023
+    },
+    {
+        "title": "Nam excepturi itaque est?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Doloremque modi quaerat facere illo. Impedit nobis omnis mollitia nam! Voluptates officia, porro veritatis minima quidem temporibus error, harum, debitis consequatur repellendus adipisci atque natus iste pariatur iure corporis ea?",
+        "year": 2023
+    },
+    {
+        "title": "Suscipit dolorum beatae laborum.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Maiores reiciendis dolores optio blanditiis sit magni quis est. Recusandae commodi ratione ea optio provident quaerat aliquid, delectus aliquam dignissimos quae eos, quod facere asperiores neque, dolorum temporibus minus deleniti!",
+        "year": 2023
+    },
+    {
+        "title": "Voluptatum eaque ut amet.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Ad, quibusdam accusantium exercitationem, consectetur architecto a vero dolore hic magnam rerum animi nihil porro! Eligendi, sunt quaerat, pariatur quasi enim debitis possimus inventore tenetur nemo tempora praesentium nulla quae!",
+        "year": 2023
+    },
+    {
+        "title": "Earum labore illum optio!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Aliquid cum sequi inventore nobis obcaecati quo saepe consequatur rem adipisci libero eveniet culpa, quaerat modi omnis. Veniam quibusdam, alias, asperiores at tempore tempora, natus quod excepturi omnis eos ullam.",
+        "year": 2023
+    },
+    {
+        "title": "Excepturi fugit aliquam iusto?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Accusantium labore veniam iste officia modi natus earum est doloribus praesentium? Quaerat dignissimos voluptatum amet, rerum atque culpa natus, accusamus maxime porro aliquid et, tempora esse placeat provident eligendi hic!",
+        "year": 2023
+    },
+    {
+        "title": "Fugit provident nemo numquam?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Sunt at nobis ea quidem, praesentium, est natus voluptates consectetur aut ut ullam dolorum repellendus maiores consequuntur laudantium possimus! Accusamus, recusandae tenetur deleniti eaque voluptates cum numquam pariatur fugit non.",
+        "year": 2023
+    },
+    {
+        "title": "Velit nostrum beatae odio?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Similique ex dolorem, quia accusamus natus ullam provident nobis enim dolor corrupti ratione velit blanditiis iste, necessitatibus illum iure nostrum doloribus dolores temporibus veritatis perferendis quam maxime quisquam ut? Quae.",
+        "year": 2023
+    },
+    {
+        "title": "Quis quisquam unde earum.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "At laborum pariatur reiciendis consectetur adipisci consequatur facere, assumenda repellendus asperiores dolorum possimus quis, ab quod! Explicabo deleniti at, doloremque, ipsam, provident est neque quis earum quod recusandae tempora delectus?",
+        "year": 2023
+    }
+]
+
