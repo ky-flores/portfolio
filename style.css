@@ -1,12 +1,9 @@
 body {
-    /* Set line height to 1.5 times the font size
-         and use the OS’s UI font as the website font
-       */
-    font: 100%/1.5 system-ui;
-    max-width: 100ch;
-    margin-inline: auto;
-    padding: 20px;
-  }
+  font: 100%/1.5 system-ui;
+  max-width: 100ch;
+  margin-inline: auto;
+  padding: 20px;
+}
 
 nav ul,
 nav li {
@@ -16,8 +13,6 @@ nav li {
 nav {
   display: flex;
   margin-bottom: 1em;
-  /* border-bottom: 1px solid oklch(80% 3% 200); */
-
   --border-color: oklch(65% 10% 200 / 60%);
   --current-border-color: oklch(60% 30% 200 / 70%);
   border-bottom: 1px solid var(--border-color);
@@ -29,12 +24,10 @@ nav a {
   color: inherit;
   text-align: center;
   padding: 0.5em;
-  /* border-bottom: 0.4em solid transparent; */
 }
 
 nav a.current {
   border-bottom: 0.4em solid oklch(80% 3% 200);
-  /* padding-bottom: 0.1em; */
 }
 
 :root {
@@ -44,7 +37,6 @@ nav a.current {
 
 html {
   accent-color: var(--color-accent);
-
   background-color: var(--background-light);
   color: canvastext;
 }
@@ -62,7 +54,7 @@ input,
 textarea,
 select,
 button {
-  font: inherit;  
+  font: inherit;
 }
 
 form {
@@ -98,20 +90,15 @@ button {
 .projects img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 10px; /* Space between image and description */
+  margin-bottom: 10px;
 }
 
 .projects h2 {
-  margin: 0; 
+  margin: 0;
 }
 
 .project-description {
-  padding-top: 140px; /* Ensure space between the image and description */
-  padding-bottom: 10px;
-}
-
-.project-description {
-  padding-top: 140px; /* Ensure space between the image and description */
+  padding-top: 140px;
   padding-bottom: 10px;
 }
 
@@ -155,13 +142,9 @@ ul li {
   color: #0077B5;
 }
 
-/* .github {
-  color: #000000;
-} */
-
 section ul li {
-  margin-bottom: 5px;  
-  line-height: 1.1;    
+  margin-bottom: 5px;
+  line-height: 1.1;
 }
 
 label.color-scheme {
@@ -205,8 +188,95 @@ label.color-scheme {
 
 .projects img {
   max-width: 100%;
-  max-height: 150px; /* or whatever limit you want */
-  object-fit: contain; /* keeps image aspect ratio */
+  max-height: 150px;
+  object-fit: contain;
   display: block;
   margin: 0 auto;
 }
+
+/* Styling for the pie chart container */
+#projects-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+/* Styling for the legend */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  border: 1px solid #ccc;
+  padding: 1em;
+  list-style: none; /* Removes default bullet points */
+  margin: 0;
+}
+
+/* Styling for each item in the legend */
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  text-align: left;
+  max-width: 100%;
+}
+
+/* Swatch color box in the legend */
+.swatch {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+  background-color: var(--color); /* Use dynamic color from the --color variable */
+}
+
+/* Styling for the container holding the pie chart and legend */
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2em;
+}
+
+/* Styling for the SVG pie chart */
+svg {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+/* Styling for the search bar */
+.searchBar {
+  width: 300%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Hover effect for non-hovered pie slices */
+svg:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+/* General styling for path elements (pie slices) */
+path {
+  transition: 300ms;
+  cursor: pointer;
+  fill: var(--color); /* Fill the pie slices with the color */
+}
+
+/* Styling for the selected pie slice */
+svg path.selected {
+  fill: #FF6347 !important; /* Red color for the selected slice */
+}
+
+/* Styling for the selected legend item */
+.legend-item.selected {
+  font-weight: bold;
+  color: #FF6347; /* Change the legend text color to match the selected pie slice */
+}
+
