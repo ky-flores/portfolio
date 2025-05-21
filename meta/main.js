@@ -86,6 +86,8 @@ function renderCommitInfo(data, commits) {
   }
 
   let xScale, yScale;
+  const fileTypeColors = d3.scaleOrdinal(d3.schemeTableau10);
+
   function renderScatterPlot(data, visibleCommits) {
     const width = 1000;
     const height = 600;
@@ -363,18 +365,24 @@ function updateTooltipPosition(event) {
       .map(([name, lines]) => {
         return { name, lines };
       });
+    files = d3.sort(files, d => -d.lines.length);
+    
 
     d3.select('.files').selectAll('div').remove();
     let filesContainer = d3.select('.files').selectAll('div').data(files).enter().append('div');
 
     filesContainer
       .append('dt')
-      .append('code')
-      .text(d => d.name);
+      .html(d => `<code>${d.name}</code><br><small>${d.lines.length} lines</small>`);
 
     filesContainer
       .append('dd')
-      .text(d => `${d.lines.length} lines`);
+      .selectAll('div')
+      .data(d => d.lines)
+      .enter()
+      .append('div')
+      .attr('class', 'line')
+      .style('background', d => fileTypeColors(d.type));
 
     updateScatterPlot(filteredCommits);
 
